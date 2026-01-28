@@ -3,7 +3,7 @@ plugins {
 	id 'maven-publish'
 }
 
-version = "b1.7.4"
+version = "a.10"
 group = "org.example"
 
 sourceCompatibility = '1.17'
@@ -94,7 +94,7 @@ task toolscripts () {
 				}
 			}
 		}
-		for (def f : new File("src/main/java/"+pkg.replace(".","/"_+"/tools").listFiles()) {
+		for (def f : new File("src/main/java/"+pkg.replace(".","/")+"/tools").listFiles()) {
 			if (!f.isFile())
 				continue
 			String scriptMain = pkg + ".tools." + f.getName().replace(".java", "")
