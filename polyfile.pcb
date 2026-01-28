@@ -1,7 +1,7 @@
 # Project information
-group=usr.skyswimmer
-id=quickff
-name="QuickFF"
+group=org.example
+id=exampletools
+name="Example"
 version=a1.0
 
 # Sub-projects
