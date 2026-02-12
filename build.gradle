@@ -14,6 +14,8 @@ def projectName = "exampletools"
 def authorName = "Example"
 def pkg = "${group}.${projectId}"
 
+buildDir = 'build/gradleout'
+
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
